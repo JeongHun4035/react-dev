@@ -1,27 +1,23 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 
-// import MainLayout from '@/layouts/MainLayout'
-// import Home from '@/pages/Home'
-// import Login from '@/pages/Login'
-// import Settings from '@/pages/Settings'
-// import NotFound from '@/pages/NotFound'
+import Layout from '@/layouts/Layout'
+import Dashboard from '@/pages/Dashboard'
 import { ROUTE_PATHS } from '@/routes/route'
 
 const AppRouter = () => {
   return (
     <Routes>
       {/* 레이아웃 라우트 */}
-      {/* <Route element={<MainLayout />}>
-        <Route path={ROUTE_PATHS.HOME} element={<Home />} />
-        <Route path={ROUTE_PATHS.LOGIN} element={<Login />} />
-        <Route path={ROUTE_PATHS.SETTINGS} element={<Settings />} />
-      </Route> */}
-
-      {/* 예: /home -> / 리다이렉트 */}
-      <Route path="/" element={<Navigate to={ROUTE_PATHS.HOME} replace />} />
-
-      {/* 404 */}
-      {/* <Route path="*" element={<NotFound />} /> */}
+      <Route element={<Layout />}>
+        {/* 예: /home -> / 리다이렉트 */}
+        <Route index element={<Navigate to={ROUTE_PATHS.DASHBOARD} replace />} />
+        <Route
+          path={ROUTE_PATHS.DASHBOARD}
+          element={<Dashboard />}
+        />
+        {/* 404 */}
+        {/* <Route path="*" element={<NotFound />} /> */}
+      </Route>
     </Routes>
   )
 }

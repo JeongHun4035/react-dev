@@ -1,6 +1,5 @@
-// 라우트 path 상수
 export const ROUTE_PATHS = {
-  HOME: '/',
+  DASHBOARD: '/dasghboard',
   LOGIN: '/login',
   SETTINGS: '/settings',
 } as const
@@ -18,8 +17,8 @@ export interface AppRouteMeta {
 
 export const APP_ROUTES: AppRouteMeta[] = [
   {
-    key: 'HOME',
-    path: ROUTE_PATHS.HOME,
+    key: 'DASHBOARD',
+    path: ROUTE_PATHS.DASHBOARD,
     label: '홈',
     showInNav: true,
   },
