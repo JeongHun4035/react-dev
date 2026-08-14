@@ -1,5 +1,5 @@
 import './Header.css'
-import type { HeaderItemProps } from '@/types/interfaces/header'
+import type { HeaderItemProps } from '@/types/interfaces/layouts'
 
 
 const HeaderItem: React.FC = () => {
