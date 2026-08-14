@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 
-import Layout from '@/layouts/Layout'
-import Dashboard from '@/pages/Dashboard'
+import Layout from '@/layouts/Layout/Layout'
+import Dashboard from '@/pages/Dashboard/Dashboard'
 import { ROUTE_PATHS } from '@/routes/route'
 
 const AppRouter = () => {

@@ -1,11 +1,12 @@
 import { Outlet } from 'react-router-dom'
 
-import Footer from '@/components/layouts/Footer'
-import Header from '@/components/layouts/Header'
+import Footer from '@/components/layouts/Footer/Footer'
+import Header from '@/components/layouts/Header/Header'
+import './Layout.css'
 
-const Layout = () => {
+const Layout: React.FC = () => {
   return (
-    <>
+    <div className="layout">
       <header className="header">
         <Header />
       </header>
@@ -15,7 +16,7 @@ const Layout = () => {
       <footer className="footer">
         <Footer />
       </footer>
-    </>
+    </div>
   )
 }
 
