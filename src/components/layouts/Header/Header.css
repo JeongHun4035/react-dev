@@ -1,9 +1,22 @@
 .header-area {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
     background-color: #E0F1FB; 
     border-bottom: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 24px;
+  .header-item {
+    cursor: pointer;
+    &:hover {
+      color: #007BFF;
+      font-weight: bold;
+    }
+  }
 }
