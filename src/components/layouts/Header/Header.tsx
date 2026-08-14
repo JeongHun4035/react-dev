@@ -3,7 +3,6 @@ import type { HeaderItemProps } from '@/types/interfaces/layouts'
 
 
 const HeaderItem: React.FC = () => {
-
   const HeaderItems: HeaderItemProps[] = [
     {
       id: 1,
@@ -22,7 +21,9 @@ const HeaderItem: React.FC = () => {
   return (
     <div className="header-items" >
       {HeaderItems.map(item => (
-        <div className="header-item" key={item.id}>
+        <div className="header-item" key={item.id}
+          onClick={() => console.log(`Clicked on ${item.name}`)}
+        >
           {item.name}
         </div>
       ))}

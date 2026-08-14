@@ -1,7 +1,6 @@
 export const ROUTE_PATHS = {
+  SIGN_IN: '/sign-in',
   DASHBOARD: '/dasghboard',
-  LOGIN: '/login',
-  SETTINGS: '/settings',
 } as const
 
 export type RouteKey = keyof typeof ROUTE_PATHS
@@ -16,6 +15,12 @@ export interface AppRouteMeta {
 }
 
 export const APP_ROUTES: AppRouteMeta[] = [
+  {
+    key: 'SIGN_IN',
+    path: ROUTE_PATHS.SIGN_IN,
+    label: '로그인',
+    showInNav: true,
+  },
   {
     key: 'DASHBOARD',
     path: ROUTE_PATHS.DASHBOARD,
