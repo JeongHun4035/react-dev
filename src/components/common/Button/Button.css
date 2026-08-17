@@ -1,0 +1,34 @@
+.common-button {
+  width: 100%;
+  height: 48px;
+  margin-top: 8px;
+
+  color: #ffffff;
+  background-color: #111827;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.common-button:hover {
+  background-color: #1f2937;
+}
+
+.common-button:active {
+  transform: scale(0.99);
+}
+
+.common-button:disabled {
+  background-color: #9ca3af;
+
+  cursor: not-allowed;
+}

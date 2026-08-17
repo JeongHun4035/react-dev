@@ -1,6 +1,6 @@
 export const ROUTE_PATHS = {
   SIGN_IN: '/sign-in',
-  DASHBOARD: '/dasghboard',
+  DASHBOARD: '/dash-board',
 } as const
 
 export type RouteKey = keyof typeof ROUTE_PATHS

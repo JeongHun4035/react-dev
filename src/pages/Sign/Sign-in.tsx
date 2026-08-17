@@ -1,16 +1,40 @@
+import { useState } from 'react'
+
 import './Sign-in.css'
+import reactDevLogo from '@/assets/react-dev.png'
+import Button from '@/components/common/Button/Button'
+import Input from '@/components/common/Input/Input'
 
 const UserInfoForm: React.FC = () => {
+  const [userId, setUserId] = useState<string>('')
+  const [password, setPassword] = useState<string>('')
+
   return (
     <>
-      <div>
-        <span> 사용자</span>
-        <input type="text" placeholder="사용자 명을 입력해주세요." />
+      <div className="input-group">
+        <Input
+          id="userId"
+          label="User ID"
+          type="text"
+          value={userId}
+          placeholder="Input your User ID"
+          onChange={setUserId}
+        />
       </div>
-      <div>
-        <span> 비밀번호 </span>
-        <input type="password" placeholder="비밀번호를 입력해주세요." />
+
+      <div className="input-group">
+        <Input
+          id="password"
+          label="Password"
+          type="password"
+          value={password}
+          placeholder="Input your Password"
+          onChange={setPassword}
+        />
       </div>
+      <Button>
+        SIGN IN
+      </Button>
     </>
   )
 }
@@ -19,6 +43,12 @@ const SignIn: React.FC = () => {
   return (
     <div className="signin-container">
       <div className="userInput-form">
+        <div className="signin-logo">
+          <img
+            src={reactDevLogo}
+            alt="React Dev"
+          />
+        </div>
         <UserInfoForm />
       </div>
     </div>

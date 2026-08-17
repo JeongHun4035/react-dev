@@ -1,9 +1,11 @@
 import './Header.css'
+
+import useTheme from '@/hooks/useTheme'
+
 import type { HeaderItemProps } from '@/types/interfaces/layouts'
 
-
 const HeaderItem: React.FC = () => {
-  const HeaderItems: HeaderItemProps[] = [
+  const headerItems: HeaderItemProps[] = [
     {
       id: 1,
       name: 'Home',
@@ -19,9 +21,11 @@ const HeaderItem: React.FC = () => {
   ]
 
   return (
-    <div className="header-items" >
-      {HeaderItems.map(item => (
-        <div className="header-item" key={item.id}
+    <div className="header-items">
+      {headerItems.map(item => (
+        <div
+          className="header-item"
+          key={item.id}
           onClick={() => console.log(`Clicked on ${item.name}`)}
         >
           {item.name}
@@ -31,11 +35,30 @@ const HeaderItem: React.FC = () => {
   )
 }
 
+const ThemeToggle: React.FC = () => {
+  const { theme, toggleTheme } = useTheme()
+
+  return (
+    <button
+      className={`theme-toggle ${theme === 'dark' ? 'active' : ''}`}
+      type="button"
+      onClick={toggleTheme}
+      aria-label="Toggle theme"
+    >
+      <span className="theme-toggle-thumb">
+        {theme === 'light' ? '☀️' : '🌙'}
+      </span>
+    </button>
+  )
+}
+
 const LayoutHeader: React.FC = () => {
   return (
-    <div className="header-area">
+    <header className="header-area">
       <HeaderItem />
-    </div>
+
+      <ThemeToggle />
+    </header>
   )
 }
 
