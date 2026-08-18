@@ -2,6 +2,9 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 
 import Layout from '@/layouts/Layout/Layout'
 import Dashboard from '@/pages/Dashboard/Dashboard'
+import SelectPage from '@/pages/Examples/children/Select'
+import ExampleDetail from '@/pages/Examples/ExampleDetail'
+import Examples from '@/pages/Examples/Examples'
 import SignIn from '@/pages/Sign/Sign-in'
 import { ROUTE_PATHS } from '@/routes/route'
 
@@ -21,6 +24,16 @@ const AppRouter = () => {
           path={ROUTE_PATHS.DASHBOARD}
           element={<Dashboard />}
         />
+        <Route
+          path={ROUTE_PATHS.EXAMPLES}
+          element={<Examples />}
+        />
+        <Route path="/examples" element={<ExampleDetail />} >
+          <Route
+            path="select"
+            element={<SelectPage />}
+          />
+        </Route>
         {/* 404 */}
         {/* <Route path="*" element={<NotFound />} /> */}
       </Route>

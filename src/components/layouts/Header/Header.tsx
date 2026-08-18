@@ -1,5 +1,8 @@
 import './Header.css'
 
+import { BsSunFill } from 'react-icons/bs'
+import { FaMoon } from 'react-icons/fa'
+
 import useTheme from '@/hooks/useTheme'
 
 import type { HeaderItemProps } from '@/types/interfaces/layouts'
@@ -46,7 +49,7 @@ const ThemeToggle: React.FC = () => {
       aria-label="Toggle theme"
     >
       <span className="theme-toggle-thumb">
-        {theme === 'light' ? '☀️' : '🌙'}
+        {theme === 'light' ? <BsSunFill /> : <FaMoon />}
       </span>
     </button>
   )

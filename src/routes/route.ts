@@ -1,6 +1,7 @@
 export const ROUTE_PATHS = {
   SIGN_IN: '/sign-in',
   DASHBOARD: '/dash-board',
+  EXAMPLES: '/examples',
 } as const
 
 export type RouteKey = keyof typeof ROUTE_PATHS
@@ -24,9 +25,17 @@ export const APP_ROUTES: AppRouteMeta[] = [
   {
     key: 'DASHBOARD',
     path: ROUTE_PATHS.DASHBOARD,
-    label: '홈',
+    label: '대시보드',
     showInNav: true,
   },
+  {
+    key: 'EXAMPLES',
+    path: ROUTE_PATHS.EXAMPLES,
+    label: '예제 페이지',
+    showInNav: true,
+  },
+
+
 //   {
 //     key: 'LOGIN',
 //     path: ROUTE_PATHS.LOGIN,
