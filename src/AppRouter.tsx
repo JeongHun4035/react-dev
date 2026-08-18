@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 
 import Layout from '@/layouts/Layout/Layout'
+import NotFound from '@/NotFound'
 import Dashboard from '@/pages/Dashboard/Dashboard'
 import SelectPage from '@/pages/Examples/children/Select'
 import ExampleDetail from '@/pages/Examples/ExampleDetail'
@@ -35,8 +36,8 @@ const AppRouter = () => {
           />
         </Route>
         {/* 404 */}
-        {/* <Route path="*" element={<NotFound />} /> */}
       </Route>
+      <Route path="*" element={<NotFound />} />
     </Routes>
   )
 }
