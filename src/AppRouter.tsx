@@ -3,6 +3,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import Layout from '@/layouts/Layout/Layout'
 import NotFound from '@/NotFound'
 import Dashboard from '@/pages/Dashboard/Dashboard'
+import PopupPage from '@/pages/Examples/children/Popup'
 import SelectPage from '@/pages/Examples/children/Select'
 import ExampleDetail from '@/pages/Examples/ExampleDetail'
 import Examples from '@/pages/Examples/Examples'
@@ -33,6 +34,10 @@ const AppRouter = () => {
           <Route
             path="select"
             element={<SelectPage />}
+          />
+          <Route
+            path="popup"
+            element={<PopupPage />}
           />
         </Route>
         {/* 404 */}

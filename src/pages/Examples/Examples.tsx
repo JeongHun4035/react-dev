@@ -7,6 +7,10 @@ const ExampleItems: React.FC = () => {
       id: 'select',
       title: 'Select',
     },
+    {
+      id: 'popup',
+      title: 'Popup',
+    },
   ]
   const navigate = useNavigate()
 

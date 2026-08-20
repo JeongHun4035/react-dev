@@ -2,7 +2,7 @@
   "hash": "9b45b152",
   "configHash": "a11ab639",
   "lockfileHash": "6b5206e6",
-  "browserHash": "fa824dc4",
+  "browserHash": "5b98fbb5",
   "optimized": {
     "react-dom": {
       "src": "../../node_modules/.pnpm/react-dom@19.2.8_react@19.2.8/node_modules/react-dom/index.js",
@@ -26,6 +26,12 @@
       "src": "../../node_modules/.pnpm/react-icons@5.7.0_react@19.2.8/node_modules/react-icons/fa/index.mjs",
       "file": "react-icons_fa.js",
       "fileHash": "520ade15",
+      "needsInterop": false
+    },
+    "react-icons/io": {
+      "src": "../../node_modules/.pnpm/react-icons@5.7.0_react@19.2.8/node_modules/react-icons/io/index.mjs",
+      "file": "react-icons_io.js",
+      "fileHash": "dab1ff87",
       "needsInterop": false
     },
     "react-router-dom": {

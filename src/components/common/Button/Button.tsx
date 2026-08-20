@@ -1,21 +1,31 @@
-import type { ButtonHTMLAttributes, ReactNode } from 'react'
 
 import './Button.css'
+import type { ButtonProps  } from '@/types/interfaces/components'
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children: ReactNode,
-}
-
-const Button: React.FC<ButtonProps> = ({
+const Button = ({
   children,
   type = 'button',
+  variant = 'primary',
+  size = 'md',
+  fullWidth = false,
+  className = '',
   ...props
-}) => {
+}: ButtonProps) => {
+  const buttonClassName = [
+    'common-button',
+    `common-button-${variant}`,
+    `common-button-${size}`,
+    fullWidth && 'common-button-full',
+    className,
+  ]
+    .filter(Boolean)
+    .join(' ')
+
   return (
     <button
       {...props}
       type={type}
-      className="common-button"
+      className={buttonClassName}
     >
       {children}
     </button>
