@@ -2,16 +2,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   width: auto;
+
+  margin: 4px;
 
   border: 1px solid transparent;
   border-radius: 10px;
-
   font-weight: 600;
-
   cursor: pointer;
-
   box-sizing: border-box;
 
   transition:
@@ -114,4 +112,14 @@
   opacity: 0.6;
 
   transform: none;
+}
+
+/* Hover */
+.common-button:hover:not(:disabled) {
+  transform: scale(1.03);
+}
+
+/* Click */
+.common-button:active:not(:disabled) {
+  transform: scale(0.98);
 }

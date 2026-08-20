@@ -22,7 +22,8 @@ body {
   --footer-background: #eef2ff;
 
   --text-primary: #111827;
-  --text-secondary: #64748b;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
 
   --border-color: #dbe3ea;
 
@@ -63,10 +64,12 @@ body {
   --header-background: #182235;
   --footer-background: #182235;
 
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
+  /* Text */
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
 
-  --border-color: #334155;
+  --border-color: #475569;
 
   --header-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   --footer-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
@@ -75,18 +78,18 @@ body {
 
   --primary: #61dafb;
 
-    /* Button */
+  /* Button */
   --button-primary-background: #f8fafc;
   --button-primary-text: #111827;
   --button-primary-hover: #e2e8f0;
 
   --button-secondary-background: #1f2937;
-  --button-secondary-text: #f8fafc;
+  --button-secondary-text: #ffffff;
   --button-secondary-hover: #334155;
   --button-secondary-border: #475569;
 
   --button-outline-background: transparent;
-  --button-outline-text: #f8fafc;
+  --button-outline-text: #ffffff;
   --button-outline-hover: #334155;
   --button-outline-border: #475569;
 
@@ -95,5 +98,5 @@ body {
   --button-danger-hover: #dc2626;
 
   --button-disabled-background: #475569;
-  --button-disabled-text: #94a3b8;
+  --button-disabled-text: #cbd5e1;
 }

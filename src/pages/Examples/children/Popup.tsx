@@ -74,16 +74,18 @@ const PopupPage: React.FC = () => {
         footer={(
           <div>
             <Button
+              size='sm'
+              onClick={() => setOpenPopup(null)}
+            >
+              Confirm
+            </Button>
+            <Button
+              size='sm'
               onClick={() => setOpenPopup(null)}
             >
               Cancel
             </Button>
 
-            <Button
-              onClick={() => setOpenPopup(null)}
-            >
-              Confirm
-            </Button>
           </div>
         )}
       >
