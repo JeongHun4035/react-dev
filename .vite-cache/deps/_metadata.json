@@ -1,61 +1,61 @@
 {
-  "hash": "9b45b152",
-  "configHash": "a11ab639",
+  "hash": "702e11c0",
+  "configHash": "098d8dcb",
   "lockfileHash": "6b5206e6",
-  "browserHash": "5b98fbb5",
+  "browserHash": "3ce08fba",
   "optimized": {
     "react-dom": {
       "src": "../../node_modules/.pnpm/react-dom@19.2.8_react@19.2.8/node_modules/react-dom/index.js",
       "file": "react-dom.js",
-      "fileHash": "c069dcf2",
+      "fileHash": "148e7c61",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/.pnpm/react-dom@19.2.8_react@19.2.8/node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "5708da34",
+      "fileHash": "931eb9bf",
       "needsInterop": true
     },
     "react-icons/bs": {
       "src": "../../node_modules/.pnpm/react-icons@5.7.0_react@19.2.8/node_modules/react-icons/bs/index.mjs",
       "file": "react-icons_bs.js",
-      "fileHash": "a0b0a6a8",
+      "fileHash": "ac4db38b",
       "needsInterop": false
     },
     "react-icons/fa": {
       "src": "../../node_modules/.pnpm/react-icons@5.7.0_react@19.2.8/node_modules/react-icons/fa/index.mjs",
       "file": "react-icons_fa.js",
-      "fileHash": "520ade15",
+      "fileHash": "984a7e51",
       "needsInterop": false
     },
     "react-icons/io": {
       "src": "../../node_modules/.pnpm/react-icons@5.7.0_react@19.2.8/node_modules/react-icons/io/index.mjs",
       "file": "react-icons_io.js",
-      "fileHash": "dab1ff87",
+      "fileHash": "f4002f7b",
       "needsInterop": false
     },
     "react-router-dom": {
       "src": "../../node_modules/.pnpm/react-router-dom@7.18.2_rea_248cf0ef508d2f2552e6645095bf60b5/node_modules/react-router-dom/dist/index.mjs",
       "file": "react-router-dom.js",
-      "fileHash": "d356f827",
+      "fileHash": "9fa4d433",
       "needsInterop": false
     },
     "react": {
       "src": "../../node_modules/.pnpm/react@19.2.8/node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "cd0cf329",
+      "fileHash": "32136b67",
       "needsInterop": true
     },
     "react/jsx-dev-runtime": {
       "src": "../../node_modules/.pnpm/react@19.2.8/node_modules/react/jsx-dev-runtime.js",
       "file": "react_jsx-dev-runtime.js",
-      "fileHash": "e0dfe8b5",
+      "fileHash": "eaca2fda",
       "needsInterop": true
     },
     "react/jsx-runtime": {
       "src": "../../node_modules/.pnpm/react@19.2.8/node_modules/react/jsx-runtime.js",
       "file": "react_jsx-runtime.js",
-      "fileHash": "4afea21c",
+      "fileHash": "95633ca4",
       "needsInterop": true
     }
   },

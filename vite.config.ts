@@ -25,6 +25,6 @@ export default defineConfig({
     // },
   },
   optimizeDeps: {
-    include: ['pinia', 'axios'],
+    include: ['axios'],
   },
 })
